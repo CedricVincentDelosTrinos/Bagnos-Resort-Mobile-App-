@@ -1,0 +1,30 @@
+:root {
+    /* Primary colors */
+    --color-forest: #28543B;
+    --color-forest-dark: #193B29;
+    --color-forest-light: #47785A;
+
+    /* Neutral colors */
+    --color-silver: #dadbdb;
+    --color-gray: #aaaaaa;
+    --color-cream: #F8FAF8;
+    --color-white: #FFFFFF;
+
+    /* Text */
+    --color-text: #24352B;
+    --color-text-muted: #78847C;
+    --color-text-light: #FFFFFF;
+
+    /* Typography */
+    --font-heading: Arial, sans-serif;
+    --font-body: Arial, sans-serif;
+
+    /* Borders */
+    --color-border: #DCE2DD;
+
+    /* Radius */
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-xl: 26px;
+}

@@ -1,0 +1,119 @@
+.description-editor {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background: white;
+}
+
+/* ===================================TOOLBAR =========================================*/
+
+.description-editor__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border-bottom: 1px solid var(--color-border);
+    background: #f8faf8;
+}
+
+.description-editor__toolbar-group {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding-right: 8px;
+    border-right: 1px solid var(--color-border);
+}
+
+.description-editor__toolbar-group:last-child {
+    border-right: none;
+}
+
+.description-editor__toolbar button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--color-forest-dark);
+    cursor: pointer;
+}
+
+.description-editor__toolbar button:hover {
+    background: #e9efe9;
+}
+
+.description-editor__toolbar button.active {
+    background: #dce9de;
+    color: var(--color-forest);
+}
+
+.description-editor__toolbar button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+/* ====================================== EDITABLE CONTENT ==============================================*/
+
+.description-editor__content {
+    min-height: 220px;
+    padding: 16px;
+    outline: none;
+    color: var(--color-forest-dark);
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.description-editor__content p {
+    margin: 0 0 12px;
+}
+
+.description-editor__content h2 {
+    margin: 18px 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.description-editor__content ul,
+.description-editor__content ol {
+    padding-left: 24px;
+    margin: 10px 0;
+}
+
+.description-editor__content li {
+    margin-bottom: 5px;
+}
+
+.description-editor__content p:last-child {
+    margin-bottom: 0;
+}
+
+/*=================================================== MOBILE ===============================================*/
+
+@media (max-width: 640px) {
+    .description-editor__toolbar {
+        gap: 5px;
+        padding: 8px;
+    }
+
+    .description-editor__toolbar-group {
+        padding-right: 5px;
+    }
+
+    .description-editor__toolbar button {
+        width: 32px;
+        height: 34px;
+    }
+
+    .description-editor__content {
+        min-height: 190px;
+        padding: 13px;
+        font-size: 14px;
+    }
+}

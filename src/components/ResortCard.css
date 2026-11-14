@@ -1,0 +1,139 @@
+.resort-card,
+.explore-card {
+    cursor: pointer;
+}
+
+.resort-card__expand-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-forest);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.resort-card__expand-indicator svg {
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.resort-card__expand-indicator svg.is-expanded {
+    transform: rotate(180deg);
+}
+
+.resort-card__expanded {
+    margin-top: 14px;
+    padding-top: 4px;
+    cursor: default;
+}
+
+.resort-card__extra-detail {
+    margin-top: 14px;
+}
+
+.resort-card__extra-detail h4 {
+    margin: 0 0 5px;
+    color: var(--color-forest-dark);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.resort-card__extra-detail p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.resort-card__expanded .resort-availability {
+    cursor: default;
+}
+
+.resort-card__description {
+    color: var(--color-text-muted);
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.resort-card__description p {
+    margin: 0 0 10px;
+}
+
+.resort-card__description p:last-child {
+    margin-bottom: 0;
+}
+
+.resort-card__description ul,
+.resort-card__description ol {
+    padding-left: 22px;
+}
+
+.resort-card__description img {
+    max-width: 100%;
+    height: auto;
+}
+
+.resort-card__tags,
+.explore-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 7px;
+    margin-top: 12px;
+}
+
+.resort-card__tags span,
+.explore-card__tags span {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 6px 11px;
+    border: 1px solid #D5E3D3;
+    border-radius: 20px;
+    background: #EDF4EA;
+    color: #365D3D;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.1px;
+}
+.resort-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.resort-card__tags span {
+    padding: 5px 9px;
+    border-radius: 20px;
+    background: #EAF1E8;
+    color: var(--color-forest);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.parking-status {
+    display: inline-block;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.parking-status--available {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.parking-status--unavailable {
+    color: #991b1b;
+    background: #fee2e2;
+}

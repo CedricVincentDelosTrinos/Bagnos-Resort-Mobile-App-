@@ -1,0 +1,170 @@
+.staff-application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.staff-application-form h2 {
+    margin: 0 0 4px;
+    color: var(--color-text, #1f2937);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Form labels */
+
+.staff-application-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--color-text, #374151);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Inputs, dropdowns and textareas */
+
+.staff-application-form input,
+.staff-application-form select,
+.staff-application-form textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 14px;
+    border: 1px solid var(--color-border, #d1d5db);
+    border-radius: 8px;
+    background: var(--color-surface, #ffffff);
+    color: var(--color-text, #1f2937);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.staff-application-form input,
+.staff-application-form select {
+    min-height: 46px;
+}
+
+.staff-application-form textarea {
+    min-height: 100px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+.staff-application-form input::placeholder,
+.staff-application-form textarea::placeholder {
+    color: var(--color-text-muted, #9ca3af);
+}
+
+.staff-application-form input:focus,
+.staff-application-form select:focus,
+.staff-application-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary, #2563eb);
+    box-shadow: 0 0 0 3px rgb(37 99 235 / 12%);
+}
+
+.staff-application-form input:disabled,
+.staff-application-form select:disabled,
+.staff-application-form textarea:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+/* Dropdown */
+
+.staff-application-form select {
+    cursor: pointer;
+}
+
+/* Coordinate fields */
+
+.staff-invitation-coordinate-fields {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+/* Field helper text */
+
+.staff-invitation-field-note {
+    color: var(--color-text-muted, #6b7280);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Error message */
+
+.staff-application-form .admin-alert {
+    margin: 0;
+}
+
+/* Submit button */
+
+.staff-application-form .admin-primary-button {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 4px;
+}
+
+/* ================================
+   APPLICATION SUCCESS
+================================ */
+
+.staff-invitation-success {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 20px;
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 12px;
+    background: var(--color-surface, #ffffff);
+    text-align: center;
+}
+
+.staff-invitation-success h2 {
+    margin: 0;
+    color: var(--color-text, #1f2937);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.staff-invitation-success p {
+    margin: 0;
+    color: var(--color-text-muted, #6b7280);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+    .staff-application-form {
+        gap: 17px;
+    }
+
+    .staff-application-form h2 {
+        font-size: 18px;
+    }
+
+    .staff-application-form input,
+    .staff-application-form select,
+    .staff-application-form textarea {
+        font-size: 16px;
+    }
+
+    .staff-invitation-coordinate-fields {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .staff-invitation-success {
+        padding: 22px 16px;
+    }
+}

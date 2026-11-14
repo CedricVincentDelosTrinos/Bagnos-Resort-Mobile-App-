@@ -1,0 +1,254 @@
+.staff-application-management {
+    width: 100%;
+    min-width: 0;
+}
+
+.staff-application-management .staff-list-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.staff-application-management .staff-list-heading h2 {
+    margin: 0 0 5px;
+}
+
+.staff-application-management .staff-list-heading p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-muted, #777);
+}
+
+.staff-application-management .admin-secondary-button {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.staff-application-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.staff-application-card {
+    min-width: 0;
+    padding: 16px;
+    border: 1px solid var(--border-color, #e5e5e5);
+    border-radius: 12px;
+    background: var(--card-background, #fff);
+}
+
+.staff-application-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.staff-application-card-header > div {
+    min-width: 0;
+}
+
+.staff-application-card-header h3 {
+    margin: 0 0 5px;
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+}
+
+.staff-application-card-header p {
+    margin: 0 0 7px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.staff-application-date {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted, #777);
+}
+
+.staff-application-status {
+    flex-shrink: 0;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.staff-application-status--pending {
+    color: #946200;
+    background: #fff3cd;
+}
+
+.staff-application-status--approved {
+    color: #176b3a;
+    background: #d8f3e2;
+}
+
+.staff-application-status--rejected {
+    color: #a12626;
+    background: #fde2e2;
+}
+
+.staff-application-details {
+    margin-top: 15px;
+    border-top: 1px solid var(--border-color, #e5e5e5);
+    border-bottom: 1px solid var(--border-color, #e5e5e5);
+}
+
+.staff-application-details summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 13px 0;
+    cursor: pointer;
+    list-style: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.staff-application-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.staff-application-details[open] summary svg {
+    transform: rotate(180deg);
+}
+
+.staff-application-details summary svg {
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.staff-application-information {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 2px 0 15px;
+}
+
+.staff-application-information > div {
+    min-width: 0;
+}
+
+.staff-application-information span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--text-muted, #777);
+    font-size: 0.75rem;
+}
+
+.staff-application-information strong,
+.staff-application-information p,
+.staff-application-information a {
+    display: block;
+    margin: 0;
+    font-size: 0.85rem;
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+}
+
+.staff-application-information a {
+    color: var(--primary-color, #2878c8);
+    text-decoration: underline;
+}
+
+.staff-application-review {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.staff-application-review label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.staff-application-review textarea {
+    width: 100%;
+    min-height: 85px;
+    padding: 11px;
+    border: 1px solid var(--border-color, #ddd);
+    border-radius: 8px;
+    background: var(--input-background, #fff);
+    color: inherit;
+    font: inherit;
+    font-size: 0.85rem;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.staff-application-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.staff-application-actions button {
+    width: 100%;
+    min-height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.staff-application-actions button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.staff-application-reject-button {
+    color: #a12626;
+    background: #fde2e2;
+}
+
+.staff-application-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+.staff-application-footer .admin-icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 38px;
+    padding: 7px 10px;
+    color: #a12626;
+    font-size: 0.8rem;
+}
+
+.staff-application-footer button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.staff-action-loading {
+    animation: staff-application-spin 1s linear infinite;
+}
+
+@keyframes staff-application-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

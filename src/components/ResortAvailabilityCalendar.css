@@ -1,0 +1,138 @@
+.resort-availability {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid var(--color-border);
+}
+
+.resort-availability__heading h4 {
+    margin: 0;
+    color: var(--color-forest-dark);
+    font-size: 15px;
+}
+
+.resort-availability__heading p {
+    margin: 5px 0 0;
+    color: var(--color-text-muted);
+    font-size: 12px;
+}
+
+.resort-availability__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 18px 0 14px;
+}
+
+.resort-availability__navigation strong {
+    color: var(--color-forest-dark);
+    font-size: 14px;
+}
+
+.resort-availability__navigation button {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: 9px;
+    background: var(--color-white);
+    color: var(--color-forest);
+}
+
+.resort-availability__navigation button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.resort-availability__weekdays,
+.resort-availability__days {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 5px;
+}
+
+.resort-availability__weekdays {
+    margin-bottom: 8px;
+}
+
+.resort-availability__weekdays span {
+    color: var(--color-text-muted);
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.resort-availability__day,
+.resort-availability__empty {
+    min-width: 0;
+    aspect-ratio: 1;
+}
+
+.resort-availability__day {
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-white);
+    color: var(--color-text);
+    font-size: 12px;
+}
+
+.resort-availability__day--available {
+    border-color: #B8D8BE;
+    background: #EAF5EC;
+    color: #28623A;
+}
+
+.resort-availability__day--booked {
+    border-color: #E6BDBD;
+    background: #FBECEC;
+    color: #A33C3C;
+}
+
+.resort-availability__day--past {
+    border-color: transparent;
+    background: #F2F2F0;
+    color: #A5A5A0;
+}
+
+.resort-availability__legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 15px;
+}
+
+.resort-availability__legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-text-muted);
+    font-size: 11px;
+}
+
+.resort-availability__dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+.resort-availability__dot--available {
+    background: #65A978;
+}
+
+.resort-availability__dot--booked {
+    background: #C96B6B;
+}
+
+.resort-availability__message {
+    margin: 14px 0 0;
+    color: var(--color-text-muted);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.resort-availability__message--error {
+    color: #A33C3C;
+}

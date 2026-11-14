@@ -1,0 +1,164 @@
+
+/* ================================
+   STAFF MANAGEMENT
+================================ */
+
+/* Temporary password */
+
+.staff-management-page .staff-password {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.staff-management-page .staff-password code {
+    max-width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.staff-management-page .staff-password-warning {
+    font-size: 0.875rem;
+    opacity: 0.8;
+}
+
+/* Staff status */
+
+.staff-management-page .staff-status {
+    display: inline-block;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+.staff-management-page .staff-status--active {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.staff-management-page .staff-status--suspended {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Staff actions */
+
+.staff-management-page .staff-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Staff list cards */
+
+.staff-management-page .admin-list-section {
+    padding: 20px 16px;
+}
+
+.staff-management-page .admin-table-wrapper {
+    overflow: visible;
+}
+
+.staff-management-page .admin-table {
+    display: block;
+    width: 100%;
+}
+
+.staff-management-page .admin-table thead {
+    display: none;
+}
+
+.staff-management-page .admin-table tbody {
+    display: grid;
+    gap: 14px;
+}
+
+.staff-management-page .admin-table tbody tr {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 12px;
+    padding: 16px;
+    border: 1px solid #e4ddce;
+    border-radius: 9px;
+    background: #fffdf7;
+}
+
+.staff-management-page .admin-table tbody td {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    overflow-wrap: anywhere;
+    font-size: 13px;
+}
+
+.staff-management-page .admin-table tbody td::before {
+    color: #73796f;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.staff-management-page .admin-table tbody td:nth-child(1)::before {
+    content: "Account ID";
+}
+
+.staff-management-page .admin-table tbody td:nth-child(2)::before {
+    content: "Assigned Resort";
+}
+
+.staff-management-page .admin-table tbody td:nth-child(3)::before {
+    content: "Status";
+}
+
+.staff-management-page .admin-table tbody td:nth-child(4)::before {
+    content: "Date Added";
+}
+
+.staff-management-page .admin-table tbody td:nth-child(5) {
+    grid-column: 1 / -1;
+    padding-top: 12px;
+    border-top: 1px solid #eee8dc;
+}
+
+.staff-management-page .admin-table tbody td:nth-child(5)::before {
+    content: "Actions";
+}
+.staff-list-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.staff-list-heading h2 {
+    margin: 0;
+}
+
+.staff-list-heading p {
+    margin: 5px 0 0;
+    color: #73796f;
+    font-size: 13px;
+}
+
+.staff-resort-filter {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #dcd5c8;
+    border-radius: 8px;
+    background: white;
+    color: #344b38;
+    font: inherit;
+}

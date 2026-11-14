@@ -1,0 +1,47 @@
+.login-selection {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.login-selection__card {
+    width: 100%;
+    max-width: 440px;
+}
+
+.login-selection__card header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.login-selection__options {
+    display: grid;
+    gap: 16px;
+}
+
+.login-selection__option {
+    display: block;
+    padding: 22px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.login-selection__option h2 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.login-selection__option p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.login-selection__back {
+    display: block;
+    margin-top: 24px;
+    text-align: center;
+}

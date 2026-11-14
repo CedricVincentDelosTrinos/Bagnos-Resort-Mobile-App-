@@ -1,0 +1,508 @@
+
+/* ========================================
+   BOOKINGS PAGE
+======================================== */
+
+.bookings-page {
+    min-width: 0;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   RESORT SELECTOR
+======================================== */
+
+.booking-resort-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.booking-resort-selector label,
+.booking-settings-fields label {
+    color: #344b38;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.booking-resort-selector select,
+.booking-settings-fields input {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #dcd5c8;
+    border-radius: 8px;
+    background: white;
+    color: #344b38;
+    font: inherit;
+}
+
+.booking-resort-selector select:focus,
+.booking-settings-fields input:focus {
+    border-color: #829477;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(130, 148, 119, 0.15);
+}
+
+.booking-resort-selector select:disabled {
+    cursor: not-allowed;
+    opacity: 0.75;
+}
+
+/* ========================================
+   OVERVIEW CARDS
+======================================== */
+
+.booking-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.booking-overview-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+    padding: 15px;
+    border: 1px solid #e4ddce;
+    border-radius: 12px;
+    background: #fffdf7;
+}
+
+.booking-overview-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #e9eee5;
+    color: #344b38;
+}
+
+.booking-overview-card > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.booking-overview-card span {
+    color: #73796f;
+    font-size: 12px;
+}
+
+.booking-overview-card strong {
+    color: #344b38;
+    font-size: 21px;
+    overflow-wrap: anywhere;
+}
+
+.booking-overview-card strong.available,
+.booking-overview-card strong.fully-booked,
+.booking-overview-card strong.disabled {
+    font-size: 15px;
+}
+
+.booking-overview-card strong.available {
+    color: #526b4e;
+}
+
+.booking-overview-card strong.fully-booked {
+    color: #a34e42;
+}
+
+.booking-overview-card strong.disabled {
+    color: #82765f;
+}
+
+/* ========================================
+   BOOKING SETTINGS
+======================================== */
+
+.booking-settings-panel {
+    margin-bottom: 20px;
+}
+
+.booking-settings-panel .admin-form-heading > svg {
+    flex-shrink: 0;
+    color: #829477;
+}
+
+.booking-settings-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.booking-settings-fields label:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.booking-settings-fields .admin-publish-toggle {
+    align-self: flex-start;
+}
+
+.booking-settings-panel .admin-field-hint {
+    line-height: 1.6;
+}
+
+/* ========================================
+   SECTION HEADINGS
+======================================== */
+
+.booking-section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+.booking-section-heading h2 {
+    margin: 0;
+    color: #344b38;
+    font-size: 18px;
+}
+
+.booking-section-heading p {
+    margin: 6px 0 0;
+    color: #73796f;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.booking-section-heading > button {
+    width: 100%;
+    justify-content: center;
+}
+
+/* ========================================
+   BOOKING FORMS
+======================================== */
+
+.booking-editor {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e4ddce;
+    border-radius: 12px;
+    background: #faf8f1;
+}
+
+.booking-editor .admin-form-heading {
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.booking-editor .admin-form-heading h2 {
+    font-size: 17px;
+}
+
+.booking-editor .admin-form-heading p {
+    line-height: 1.5;
+}
+
+.booking-editor .admin-form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-editor .admin-form-grid label {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 0;
+}
+
+.booking-editor .admin-form-grid .full-width {
+    width: 100%;
+}
+
+.booking-editor input:not([type="checkbox"]),
+.booking-editor textarea {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #dcd5c8;
+    border-radius: 8px;
+    background: white;
+    color: #344b38;
+    font: inherit;
+    font-weight: 400;
+}
+
+.booking-editor input:focus,
+.booking-editor textarea:focus {
+    border-color: #829477;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(130, 148, 119, 0.15);
+}
+
+.booking-editor textarea {
+    resize: vertical;
+}
+
+.booking-editor .admin-form-actions {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 9px;
+}
+
+.booking-editor .admin-form-actions button {
+    width: 100%;
+    justify-content: center;
+}
+
+/* ========================================
+   FILTERS
+======================================== */
+
+.booking-filters {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 9px;
+    margin-bottom: 16px;
+}
+
+.booking-filters select,
+.booking-filters input {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #dcd5c8;
+    border-radius: 8px;
+    background: white;
+    color: #344b38;
+    font: inherit;
+    font-size: 13px;
+}
+
+.booking-filters select:focus,
+.booking-filters input:focus {
+    border-color: #829477;
+    outline: none;
+}
+
+.booking-filters button {
+    width: 100%;
+    justify-content: center;
+}
+
+/* ========================================
+   MOBILE BOOKING CARDS
+======================================== */
+
+.bookings-page .admin-table-wrapper {
+    width: 100%;
+    overflow: visible;
+}
+
+.bookings-page .admin-table {
+    display: block;
+    width: 100%;
+    min-width: 0 !important;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.bookings-page .admin-table thead {
+    display: none;
+}
+
+.bookings-page .admin-table tbody {
+    display: grid;
+    gap: 12px;
+}
+
+.bookings-page .admin-table tbody tr {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+    padding: 10px;
+    border: 1px solid #e4ddce;
+    border-radius: 12px;
+    background: #fffdf7;
+}
+
+.bookings-page .admin-table tbody td {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    padding: 10px 8px;
+    border: none;
+    color: #344b38;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.bookings-page .admin-table tbody td::before {
+    margin-bottom: 6px;
+    color: #858779;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* ========================================
+   GROUP BOOKING CARD FIELDS
+======================================== */
+
+.booking-table tbody td:nth-child(1) {
+    grid-column: 1 / -1;
+}
+
+.booking-table tbody td:nth-child(1)::before {
+    content: "Group";
+}
+
+.booking-table tbody td:nth-child(1) strong {
+    color: #344b38;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.booking-table tbody td:nth-child(2)::before {
+    content: "Booking date";
+}
+
+.booking-table tbody td:nth-child(3)::before {
+    content: "Guests";
+}
+
+.booking-table tbody td:nth-child(4)::before {
+    content: "Status";
+}
+
+.booking-notes {
+    display: block;
+    max-width: 100%;
+    margin-top: 6px;
+    color: #73796f;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+/* ========================================
+   CAPACITY OVERRIDE CARD FIELDS
+======================================== */
+
+.bookings-page .admin-table:not(.booking-table) tbody td:nth-child(1) {
+    grid-column: 1 / -1;
+}
+
+.bookings-page .admin-table:not(.booking-table) tbody td:nth-child(1)::before {
+    content: "Date";
+}
+
+.bookings-page .admin-table:not(.booking-table) tbody td:nth-child(2)::before {
+    content: "Capacity";
+}
+
+.bookings-page .admin-table:not(.booking-table) tbody td:nth-child(3)::before {
+    content: "Manual status";
+}
+
+.bookings-page .admin-table:not(.booking-table) tbody td:nth-child(4) {
+    grid-column: 1 / -1;
+}
+
+.bookings-page .admin-table:not(.booking-table) tbody td:nth-child(4)::before {
+    content: "Notes";
+}
+
+.booking-status {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.booking-status.active {
+    background: #e9eee5;
+    color: #344b38;
+}
+
+.booking-status.cancelled {
+    background: #f8eae7;
+    color: #963f35;
+}
+
+/* ========================================
+   CARD ACTIONS
+======================================== */
+
+.bookings-page .admin-table tbody td:last-child {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 9px;
+    min-height: 48px;
+    margin-top: 5px;
+    padding: 10px 8px 4px;
+    border-top: 1px solid #eee7da;
+}
+
+.bookings-page .admin-table tbody td:last-child::before {
+    content: "Actions";
+    margin: 0 auto 0 0;
+}
+
+.bookings-page .admin-row-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bookings-page .admin-row-actions .admin-icon-button {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 9px;
+}
+
+/* ========================================
+   EMPTY STATES
+======================================== */
+
+.bookings-page .admin-empty-state {
+    padding: 24px 14px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.booking-filters input[type="search"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.booking-filters input[type="search"]::placeholder {
+    color: #99998e;
+    opacity: 1;
+}
