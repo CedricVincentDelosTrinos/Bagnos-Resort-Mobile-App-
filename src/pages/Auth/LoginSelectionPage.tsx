@@ -7,7 +7,7 @@ export default function LoginSelectionPage() {
         <main className="login-selection">
             <div className="login-selection__card">
                 <header>
-                    <h1>Welcome to Miraflor</h1>
+                    <h1>Welcome to Bagnos!</h1>
                     <p>Choose how you want to sign in.</p>
                 </header>
 
